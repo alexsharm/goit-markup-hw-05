@@ -58,6 +58,10 @@ a {
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  position: fixed;
+  z-index: 99;
+  background-color: #ffffff;
+  width: 100%;
 }
 
 .header-container {
@@ -531,4 +535,160 @@ button {
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Modal */
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 199;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.is-open {
+  opacity: 1;
+  pointer-events: all;
+  visibility: inherit;
+}
+
+.modal-form {
+  width: 408px;
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  margin-bottom: 16px;
+}
+
+.comment-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+  border-radius: 4px;
+}
+
+.input-wrap,
+.comment-text {
+  margin-top: 4px;
+}
+
+.form-title {
+  color: var(--NAVY-BLUE, #2e2f42);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.form-text {
+  font-size: 12px;
+  font-style: normal;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.terms-box {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.send-button {
+  padding: 16px 32px;
+  border-radius: 4px;
+  background: var(--IRIS, #4d5ae5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: var(--WHITE, #fff);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border: none;
+  width: min-content;
+  align-self: center;
+}
+
+.terms-check {
+  margin-right: 8px;
+}
+
+.input-box {
+  margin-bottom: 8px;
+}
+
+.close-button {
+  align-self: flex-end;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e7e9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.comment-text {
+  font-size: 12px;
+  font-style: normal;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  resize: none;
+  border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+  border-radius: 4px;
+}
+
+.comment-text::placeholder {
+  padding: 8px 0 0 16px;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+
+.send-button:hover {
+  background-color: var(--OCEAN, #404bbf);
+}
+
+.input:focus + svg {
+  fill: #4d5ae5;
+}
+
+.input:focus {
+  border: 1px solid var(--IRIS, #4d5ae5);
+  outline: none;
 }
