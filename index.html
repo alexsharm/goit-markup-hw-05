@@ -439,84 +439,103 @@
             </li>
           </ul>
         </div>
-        <div class="backdrop is-hidden is-open">
-          <form class="modal-form">
-            <div class="form-container">
-              <button type="button" class="close-button">
-                <svg width="8px" height="8px">
-                  <use href="./images/icons.svg#icon-close-black"></use>
-                </svg>
-              </button>
-              <h3 class="form-title">
-                Leave your contacts and we will call you back
-              </h3>
-              <div class="input-box">
-                <label for="first_name" class="form-text">Name</label>
-                <div class="input-wrap">
-                  <input
-                    type="text"
-                    id="first_name"
-                    name="first_name"
-                    class="input"
-                  />
-                  <svg width="18px" height="18px" class="form-icon">
-                    <use href="./images/icons.svg#icon-person-black"></use>
-                  </svg>
-                </div>
-              </div>
-
-              <div class="input-box">
-                <label for="phone_number" class="form-text">Phone</label>
-                <div class="input-wrap">
-                  <input
-                    type="tel"
-                    name="phone_number"
-                    id="phone_number"
-                    class="input"
-                  />
-                  <svg width="18px" height="18px" class="form-icon">
-                    <use href="./images/icons.svg#icon-phone-black"></use>
-                  </svg>
-                </div>
-              </div>
-
-              <div class="input-box">
-                <label for="email_adress" class="form-text">Email</label>
-                <div class="input-wrap">
-                  <input
-                    type="email"
-                    name="email_adress"
-                    id="email_adress"
-                    class="input"
-                  />
-                  <svg width="18px" height="18px" class="form-icon">
-                    <use href="./images/icons.svg#icon-email-black"></use>
-                  </svg>
-                </div>
-              </div>
-
-              <div class="comment-box">
-                <label for="comment_text" class="form-text">Comment</label>
-                <textarea
-                  name="comment_text"
-                  id="comment_text"
-                  rows="10"
-                  placeholder="Text input"
-                  class="comment-text"
-                ></textarea>
-              </div>
-              <div class="terms-box">
-                <input type="checkbox" class="terms-check" />
-                <p class="form-text">
-                  I accept the terms and conditions of the
-                  <a href="#">Privacy Policy</a>
-                </p>
-              </div>
-              <button type="submit" class="send-button">Send</button>
-            </div>
+        <div class="footer-form-cont">
+          <p class="subsc-text">Subscribe</p>
+          <form class="footer-form">
+            <label>
+              <input
+                type="email"
+                name="footer_email"
+                placeholder="E-mail"
+                class="footer-email"
+              />
+            </label>
+            <button type="submit" class="subscribe-button">
+              Subscribe
+              <svg width="24px" height="24px" class="footer-tg-ic">
+                <use href="./images/icons.svg#icon-telegram-icon"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden">
+      <form class="modal-form">
+        <div class="form-container">
+          <button type="button" class="close-button">
+            <svg width="8px" height="8px">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <h3 class="form-title">
+            Leave your contacts and we will call you back
+          </h3>
+          <div class="input-box">
+            <label for="first_name" class="form-text">Name</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                id="first_name"
+                name="first_name"
+                class="input"
+              />
+              <svg width="18px" height="18px" class="form-icon">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label for="phone_number" class="form-text">Phone</label>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                name="phone_number"
+                id="phone_number"
+                class="input"
+              />
+              <svg width="18px" height="18px" class="form-icon">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label for="email_adress" class="form-text">Email</label>
+            <div class="input-wrap">
+              <input
+                type="email"
+                name="email_adress"
+                id="email_adress"
+                class="input"
+              />
+              <svg width="18px" height="18px" class="form-icon">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="comment-box">
+            <label for="comment_text" class="form-text">Comment</label>
+            <textarea
+              name="comment_text"
+              id="comment_text"
+              rows="10"
+              placeholder="Text input"
+              class="comment-text"
+            ></textarea>
+          </div>
+          <div class="terms-box">
+            <input type="checkbox" class="terms-check" />
+            <p class="form-text">
+              I accept the terms and conditions of the
+              <a href="#">Privacy Policy</a>
+            </p>
+          </div>
+          <button type="submit" class="send-button">Send</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
