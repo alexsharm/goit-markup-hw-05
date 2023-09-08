@@ -638,12 +638,6 @@ button {
   padding: 72px 24px 24px 24px;
 }
 
-.form-container {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 16px;
-}
-
 .comment-box {
   display: flex;
   flex-direction: column;
