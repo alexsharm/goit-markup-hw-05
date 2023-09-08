@@ -517,7 +517,7 @@
           <div class="comment-box">
             <label for="user-comment" class="form-text">Comment</label>
             <textarea
-              name="user-commentt"
+              name="user-comment"
               id="user-comment"
               rows="10"
               placeholder="Text input"
@@ -532,8 +532,18 @@
               id="user-privacy"
               name="user-privacy"
             />
-            <label for="user-privacy" class="form-text">
-              I accept the terms and conditions of the</label
+            <label
+              for="user-privacy"
+              class="form-text"
+              class="custom-checkbox-icon"
+            >
+              <span class="checkbox-cont">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-property-click"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="#" class="prpl-link">Privacy Policy</a></label
             >
           </div>
           <button type="submit" class="send-button">Send</button>

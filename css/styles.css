@@ -698,10 +698,21 @@ button {
   border: none;
   width: min-content;
   align-self: center;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  line-height: 1.5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.terms-check {
-  margin-right: 8px;
+.terms-check:checked {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.prpl-link {
+  color: #4d5ae5;
 }
 
 .input-box {
@@ -788,4 +799,18 @@ button {
 .input:focus {
   border: 1px solid var(--IRIS, #4d5ae5);
   outline: none;
+}
+
+.checkbox-cont {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  fill: transparent;
 }
