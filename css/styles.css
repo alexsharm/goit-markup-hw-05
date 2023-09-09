@@ -621,6 +621,8 @@ button {
 }
 
 .modal-form {
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-window {
